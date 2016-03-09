@@ -1,0 +1,303 @@
+@charset "utf-8";
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 3-mrt-2016, 11:38:53
+    Author     : cyber05
+*/
+
+/****algemeen****/
+/*div, aside, header, footer, article, section, ul, li{
+    outline: 1px dashed red;
+}*/
+/*Normalize*/
+html, body, div, section, article, aside, nav, ul, li{
+    margin:0;
+    padding:0;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing:0;
+    empty-cells: hide;
+}
+tr,td{
+    margin:0;
+    padding:0;
+}
+
+body {
+    font: small Arial, sans-serif;
+    font-size:100%;    
+}
+h1,h2,h3,h4,h5,h6 {
+   margin: 0;  
+}
+
+a, a:visited{
+    text-decoration: none;
+}
+
+a:hover, a:active{
+    text-decoration: underline;
+    color: #058;
+}
+
+
+/*****TYPOGRAFIE******/
+
+.date{
+    font-size: 0.8em;
+    margin:0 0 0.5em 0;
+}
+
+#hoofdmenu ul li a{
+    font-size: 0.8em;
+    color:#665950;
+    
+}
+
+#boven h1{
+    color: #8fb209;
+    font-size: 3em;
+    margin: 0 0 0.5em 0;
+}
+
+#boven h2{
+    color: #665950;
+    font-size: 1em;
+    font-style: italic;
+    margin: 0 0 0.6em 0;
+}
+
+#boven h3{
+    color: #665950;
+    font-size: 0.8em;
+    font-weight:  bold;
+    margin: 0 0 0.5em 0;
+}
+#boven p{
+    color: #665950;
+    font-size: 0.8em;
+    margin: 0 0 0.5em 0;
+}
+
+#midden h2, #onder h2{
+    color: #8fb209;
+    margin: 0 0 1em 0;
+}
+
+#midden h3, #onder h3{
+    font-size: 1em;
+    color: #665950;
+    margin: 0 0 1em 0;
+}
+
+#midden p, #onder p{
+    color: #665950;
+    font-size: 0.8em;   
+}
+
+#midden li{
+    font-size: 0.8em;
+    color: #665950;
+}
+
+em{
+    font-weight: bold;
+    font-style: normal;
+    color: #9a3098;
+}
+
+code{
+    color: #8b1c00;
+    font-size: 150%;
+} 
+
+footer p{
+    font-style: italic;
+    margin: 0 0 0.5em 0;
+}
+
+footer {
+    color: #665950;
+    font-size: 0.8em;
+    margin: 0 0 0.5em 0;
+    padding: 1em 0;
+}
+
+
+
+
+/******KLEUREN*******/
+/*
+tekstkleur: #665950
+linkkleur: #4c86cf
+linkhover: #058
+achtergrondBleek: #fcfaf8
+achtergrondDonker: #ebe8e5
+achtergrondGroen: #8fb209
+borderGrijs: #dcdad8
+headingGroen: #7ea107
+headingDonker: #52463f
+headingPaars: #9a3098
+code: #8b1c00
+imgRand: #e9dce9
+*/
+
+
+#loginbalk{
+    background: #8fb209;
+}
+
+input[type=submit]{
+    background: #4b8908;
+    padding:5px 15px; 
+    border:1px solid #2a4b06;
+    cursor:pointer;
+    color: white;
+}
+
+form{
+    color: white;
+    font-size: 0.8em;
+}
+
+#midden{
+    background: #ebe8e5;
+}
+
+
+
+
+/********STRUCTUUR*********/
+body{
+ 	margin:0;
+	padding:0;   
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto 0 auto;
+}
+
+
+#login {
+   text-align: right;
+}
+
+
+section{
+    border-bottom: 1px solid #dcdad8;
+}
+
+#logo{
+    margin: 1em 0;
+}
+
+#hoofdmenu{
+    margin-top:-2.6em;   
+}
+#hoofdmenu ul {
+    text-align: right;
+    list-style-type: none;
+    margin: 0 0 0.5em 0;
+    padding: 0;  
+}
+#hoofdmenu ul li{
+   display: inline-block;
+}
+#hoofdmenu ul li a{
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    width: 7em;
+    padding: 0.375em 0.5em; /*6px 8px*/
+}
+#hoofdmenu li~li{
+    border-left: 1px solid #ebe8e5;
+} 
+
+
+#boven img{
+    float: right;
+    border: 5px solid #dcdad8;
+    width: 30%;
+    min-width: 250px;
+}
+
+#boven, #midden, #onder{
+    padding: 1.5em 0;
+}
+#midden img{
+    width:24%;
+    min-width: 200px;
+    float: left;
+    margin: -2.5em 1em 1em 0;
+    border: 5px solid #dcdad8;   
+}
+
+#waarom li{
+    list-style-image: url(../img/check.png);
+    list-style-type: none;
+    box-sizing: border-box;
+    width: 30%;
+    height: inherit;
+    overflow:  visible;
+    margin-right: 5%;
+    float: left; 
+    margin-bottom: 1em;
+}
+
+#waarom li:nth-child(3n+0){
+    margin-right:0; 
+}
+
+#waarom li:nth-child(3n+1){
+    clear: both;
+}
+
+#onder article{
+    box-sizing: border-box;
+    width: 32%;
+    float: left;
+    margin-right: 2%;
+}
+
+#onder article:last-of-type{
+    margin-right: 0;
+}
+
+#onder img{
+    float: right;
+    width: 10%;
+}
+
+
+
+
+
+
+
+
+/*clear*/
+.cf{clear: both;}
+/*
+clearfix hack
+http://nicolasgallagher.com/micro-clearfix-hack/
+*/
+.clearFix:before, .clearFix:after{
+    content:" ";
+    display:table;
+}
+.clearFix:after{
+    clear:both;
+}
+
+/*enkel voor IE6/7 */
+.clearFix{
+    *zoom:1;
+}
